@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>tarea - tew</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="contacto.html" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+   
+    <header>
+       
+        <nav>
+            <img width="290" height="220" src="perfil.JPEG">
+            <a href="index.html">HOJA DE VIDA</a>
+            <a href="contacto.html">CONTACTOS</a>
+            
+        </nav>
+
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">JUAN A. QUENTA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">PAGINA PRINCIPAL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BIENVENIDOS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MAS INFORMACION
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">77792073 llamada</a></li>
+            <li><a class="dropdown-item" href="#"> mas info</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">RECLAMOS</a></li>
+          </ul>
+        </li>
+      </ul>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </div>
+  </div>
+</nav>
+
+    <section>
+    <main class="grid-container">
+        <section class="item item3">
+            <div class="container">
+        <h2 class="mb-4">NUMERO DE VISITAS</h2>
+        <div class="alert alert-primary" id="contador">Visitas: 0</div>
+        <button class="btn btn-danger" id="reiniciar">Reiniciar contador</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let visitas = localStorage.getItem("contadorVisitas") || 0;
+            visitas++;
+            document.getElementById("contador").textContent = "Visitas: " + visitas;
+            localStorage.setItem("contadorVisitas", visitas);
+
+            document.getElementById("reiniciar").addEventListener("click", () => {
+                localStorage.setItem("contadorVisitas", 0);
+                document.getElementById("contador").textContent = "Visitas: 0";
+            });
+        });
+        </script>
+        <img width="290" height="220" src="qr.jpg">
+        </section>
+        <section class="item item4">
+          <h3 class="text-center mb-4">INFORMACION PERSONAL</h3>
+
+    <div class="accordion" id="accordionExample">
+        <!-- Primer acordeón -->
+        <div class="accordion-item">
+            <h4 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PERSONAL
+                </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Soy una persona trabajadora, sociable, sencilla, humilde y sobre todas las cosas perseverante dispusto a empezar desde abajo para construirse hasta llegar al objetivo.
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo acordeón -->
+        <div class="accordion-item">
+            <h4 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    FORTALEZAS
+                </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    humildad,
+                    sinceridad,
+                    seguridad,
+                    trabajador,
+                    perseverancia.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercer acordeón -->
+        <div class="accordion-item">
+            <h4 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    DEVILIDADES
+                </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Ninguna.
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <img width="290" height="220" src="foto1.jpg">
+
+
+
+        </section>
+        <section class="item item1">
+            <h2>PAGINA PRINCIPAL</h2>
+            <p>Ven y prueba nuestro rico arte culinario en todas las variedades de sabor.</p>
+            <img width="290" height="220" src="trab1.jpg">
+        </section>
+        <section class="item item2">
+            <h2>EXPERIENCIA  LABORAL</h2>
+            <p>aquii encontramos un poco mas del camino laboral obtenido.</p>
+            <img width="290" height="220" src="expe.JPG">
+        </section>
+        <section class="item item3">
+            <h2>EXPERIENCIA LABORAL TIGO</h2>
+            <p>como ultima experiencia laboral esta la empresa de tigo "4 años" TECNICO OPERATIVO DE REDES</p>
+            <img width="290" height="220" src="tigo.webp">
+        </section>
+        <section class="item item4">
+            <h2>CONTACTOS</h2>
+            <p>Encuentra mas informacion y referencias sobre mi persona haviendo click aqui.</p>
+            <img width="290" height="220" src="conta.png">
+        </section>
+        
+    </main>
+    
+    
+<p><h5>EXPERIENCIA  mira una pequeña parte de mi vida y mi esperiencia laborar aqui </h5>
+    
+    
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/milamores" frameborder="0" allowfullscreen></iframe>
+   
+    <footer>
+       &copy; Juan A. Quenta C. - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
