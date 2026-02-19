@@ -1,0 +1,89 @@
+body {
+    background: url('fofo.jpg');  
+    text-align: center;
+     font-family: pepita;
+   
+    margin: 10;
+    padding: 30;
+
+}
+
+header {
+    background-color: #002147;
+    padding: 10px;
+    
+}
+.form{
+    text-decoration-color: blue;
+    padding: 20px;
+    
+}
+section{
+
+    text-align: center;
+    border-radius: 10px;
+}
+nav {
+    
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 5px;
+
+}
+
+nav a {
+    font-size:16px;
+    font-weight: bold;
+    background: url('info2.jpg');
+    padding: 40px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: url('principal.png');
+    border-radius: 50px;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    border-color: #e7ae60;
+
+}
+.accordion{
+    display: flex;
+    background: white;
+}
+
+.item {
+
+    font-weight: bold;
+    background-color: #87CEEB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 3px solid black;
+}
+
+h5 {
+    background-color: yellow;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
